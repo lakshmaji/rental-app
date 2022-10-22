@@ -3,7 +3,7 @@ import { useScrollPosition } from './useScrollPosition';
 
 const THRESHOLD = 0;
 
-export const useScrollDirection = (): JSX.Element => {
+export const useScrollDirection = (): string => {
   const [scrollDirection, setScrollDirection] = useState('up');
 
   const blocking = useRef(false);
