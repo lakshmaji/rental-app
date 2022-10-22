@@ -3,66 +3,75 @@
 <head>
   <title>Rental App</title>
   <style>
-    /*======================
-    404 page
-=======================*/
-
-    .page_404 {
-      padding: 40px 0;
-      background: #fff;
-      font-family: 'Arvo', serif;
-    }
-
-    .page_404 img {
-      width: 100%;
-    }
-
-    .four_zero_four_bg {
-      background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
-      height: 400px;
-      background-position: center;
-    }
-
-    .four_zero_four_bg h1 {
+    h1 {
       font-size: 80px;
     }
 
-    .four_zero_four_bg h3 {
-      font-size: 80px;
+    h2 {
+      font-size: 60px;
     }
 
-    .link_404 {
+    a {
       color: #fff !important;
-      padding: 10px 20px;
+      padding: 10px 50px;
       background: #39ac31;
       margin: 20px 0;
       display: inline-block;
+      text-decoration: none;
+      outline: none;
+      border-radius: 6px;
+      font-size: 22px !important;
+      font-weight: 200;
+      line-height: 27px;
+      letter-spacing: 2px;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease 0s;
+      cursor: pointer;
     }
 
-    .contant_box_404 {
-      margin-top: -50px;
+    section {
+      display: table;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+    .container {
+      text-align: center;
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    .wrapper {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .crood_bg {
+      background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+      height: 400px;
+      background-position: center;
+      background-repeat: no-repeat;
     }
   </style>
 </head>
 
 <body>
-  <section class="page_404">
+  <section>
     <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="col-sm-10 col-sm-offset-1 text-center">
-            <div class="four_zero_four_bg">
-              <h1 class="text-center">404</h1>
-            </div>
+      <div class="wrapper">
+        <div class="crood_bg">
+          <h1>404</h1>
+        </div>
 
-            <div class="contant_box_404">
-              <h3 class="h2">Look like you're lost</h3>
+        <div>
+          <h2>Look like you're lost</h2>
 
-              <p>the page you are looking for not avaible!</p>
+          <p>the page you are looking for not amiable!</p>
 
-              <a href="" class="link_404">Go to Home</a>
-            </div>
-          </div>
+          <a href="">Go to Home</a>
         </div>
       </div>
     </div>
