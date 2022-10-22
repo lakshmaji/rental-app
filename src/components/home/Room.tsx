@@ -1,9 +1,9 @@
 import { FC } from 'react';
-import { IRoom } from './data/rooms';
 import LazyLoad from 'react-lazyload';
+import { IProduct } from '../../models/product';
 
 interface Props {
-  room: IRoom;
+  room: IProduct;
   onClick?: (_: number) => void;
 }
 

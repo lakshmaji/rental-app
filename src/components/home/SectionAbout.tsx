@@ -1,10 +1,11 @@
-import chapters, { IChapter } from './data/chapters';
+import chapters, { } from '../../data/chapters';
 import SectionTitle from './SectionTitle';
 import LazyLoad from 'react-lazyload';
+import { IChapter } from '../../models/chapter';
 
 const SectionAbout = () => {
   return (
-    <section id="about" data-testid="about" className="about-us">
+    <section id="about-us" data-testid="about" className="about-us">
       <SectionTitle title="About Us" subtitle="Allow us to tell you a short story..." />
       
 

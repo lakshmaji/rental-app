@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import rooms from "./data/rooms";
+import rooms from "../../data/rooms";
 import Room from "./Room";
 import SectionTitle from "./SectionTitle";
 
