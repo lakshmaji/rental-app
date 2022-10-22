@@ -18,7 +18,7 @@
     "eject": "react-scripts eject",
     "e2e": "$(npm bin)/cypress open",
     "lint": "eslint .",
-    "lint:fix": "npm run lint --fix && npm run pretty-quick",
+    "lint:fix": "eslint . --fix",
     "prepare": "husky install",
     "pretty-quick": "pretty-quick --staged"
   },
