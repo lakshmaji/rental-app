@@ -1,8 +1,8 @@
-import { FC } from 'react';
+import { FC } from 'react'
 
 interface Props {
-  title: string;
-  subtitle: string;
+  title: string
+  subtitle: string
 }
 
 const SectionTitle: FC<Props> = ({ title, subtitle }) => {
@@ -11,7 +11,7 @@ const SectionTitle: FC<Props> = ({ title, subtitle }) => {
       <h2 className="title">{title}</h2>
       <h3 className="subtitle">{subtitle}</h3>
     </div>
-  );
-};
+  )
+}
 
-export default SectionTitle;
+export default SectionTitle

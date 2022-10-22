@@ -1,7 +1,7 @@
-import { FC } from 'react';
+import { FC } from 'react'
 // TODO: remove this library
-import AnchorLink from 'react-anchor-link-smooth-scroll';
-import Logo from '../logo/Logo';
+import AnchorLink from 'react-anchor-link-smooth-scroll'
+import Logo from '../logo/Logo'
 
 const year = new Date().getFullYear()
 
@@ -33,7 +33,7 @@ const Footer: FC = () => {
         </li>
       </ul>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

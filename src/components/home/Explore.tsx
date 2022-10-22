@@ -1,7 +1,7 @@
-import { Fragment } from "react";
-import products from "../../data/products";
-import Room from "./Room";
-import SectionTitle from "./SectionTitle";
+import { Fragment } from 'react'
+import products from '../../data/products'
+import Room from './Room'
+import SectionTitle from './SectionTitle'
 
 const ExploreSection = () => {
   return (
@@ -15,7 +15,7 @@ const ExploreSection = () => {
         ))}
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default ExploreSection;
+export default ExploreSection

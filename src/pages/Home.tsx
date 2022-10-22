@@ -1,11 +1,11 @@
 import React, { FC, lazy, Suspense } from 'react'
 import QuickSearch from '../components/home/QuickSearch'
 import Navbar from '../components/navbar/Navbar'
-import mainvectorsvg from "../assets/header/Vector.svg";
-import Footer from '../components/footer/Footer';
+import mainvectorsvg from '../assets/header/Vector.svg'
+import Footer from '../components/footer/Footer'
 
-const Explore = lazy(() => import('../components/home/Explore'));
-const SectionAbout = lazy(() => import('../components/home/SectionAbout'));
+const Explore = lazy(async () => await import('../components/home/Explore'))
+const SectionAbout = lazy(async () => await import('../components/home/SectionAbout'))
 
 interface Props {
 
@@ -30,7 +30,6 @@ const Home: FC<Props> = () => {
               </div>
             </div>
             <img src={mainvectorsvg} className="mask" alt="mask" />
-
 
         </header>
         <Suspense fallback={<div>loading...</div>}>

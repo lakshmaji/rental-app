@@ -1,12 +1,12 @@
 import React from 'react'
-import Input from './Input';
+import Input from './Input'
 
 const QuickSearch = () => {
   const [input, setInput] = React.useState({
-    CITY: "Select your city",
-    DATES: "Select your dates",
-    GUESTS: "Add guests",
-  });
+    CITY: 'Select your city',
+    DATES: 'Select your dates',
+    GUESTS: 'Add guests'
+  })
 
   return (
     <div className="form-wrapper">
@@ -20,7 +20,7 @@ const QuickSearch = () => {
         </button>
       </div>
     </div>
-  );
+  )
 }
 
 export default QuickSearch

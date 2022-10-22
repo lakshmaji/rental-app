@@ -1,18 +1,18 @@
-import { FC } from 'react';
-import LazyLoad from 'react-lazyload';
-import { IProduct } from '../../models/product';
+import { FC } from 'react'
+import LazyLoad from 'react-lazyload'
+import { IProduct } from '../../models/product'
 
 interface Props {
-  product: IProduct;
-  onClick?: (_: number) => void;
+  product: IProduct
+  onClick?: (_: number) => void
 }
 
 const Product: FC<Props> = ({ product, onClick }) => {
   const handleClick = () => {
-    if (onClick) {
-      onClick(product.id);
+    if (onClick != null) {
+      onClick(product.id)
     }
-  };
+  }
 
   return (
     <div className="product-container">
@@ -20,8 +20,8 @@ const Product: FC<Props> = ({ product, onClick }) => {
 
       <img className="image" src={product.image} alt={product.name} style={{
         width: '100%',
-        height:'100%',
-        objectFit: "cover"
+        height: '100%',
+        objectFit: 'cover'
       }} height={'300rem'} width="500rem" />
       </LazyLoad>
 
@@ -42,7 +42,7 @@ const Product: FC<Props> = ({ product, onClick }) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Product;
+export default Product
