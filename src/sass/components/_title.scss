@@ -1,0 +1,56 @@
+.title-container {
+    .title {
+      font-family: 'Exo 2', sans-serif;
+      font-size: 6.4rem;
+      font-weight: 700;
+      line-height: 7rem;
+      letter-spacing: 0;
+      text-align: left;
+      padding-bottom: 2.1rem;
+      padding-top: 4.4rem;
+      
+    }
+  
+    .subtitle {
+      font-weight: 400;
+      font-size: 1.8rem;
+      line-height: 110%;
+      max-width: 30rem;
+      margin: 14px 0px;
+      margin-bottom: 4.8rem;
+
+    }
+  }
+  
+@include breakpoint(small-2x) {
+  .title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    .subtitle {
+      font-size: 2.8rem;
+      line-height: 110%;
+      max-width: 60rem;
+    }
+  }
+
+}
+@include breakpoint(medium) {
+  .title-container {
+    .title {
+      margin-bottom: 5.1rem;
+      margin-top: 5.4rem;
+    }
+  }
+}
+
+@include breakpoint(medium-2x) {
+  .title-container {
+    .title {
+      margin-bottom: 5.1rem;
+      margin-top: 5.4rem;
+    }
+  }
+}

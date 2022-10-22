@@ -1,0 +1,17 @@
+.app-logo {
+
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 5.4rem;
+    
+    margin: 0;
+  
+  img {
+    filter: invert(1);
+  }
+    @include breakpoint(small-2x) {
+      font-size: 10rem;
+      line-height: 13.5rem;
+    }
+  }
+  

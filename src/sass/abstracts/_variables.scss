@@ -25,9 +25,15 @@ $max-width: 1180px !default;
 
 
 $breakpoints: (
+  // extra small devises (phones)
   'small': 320px,
+  // small devises (tablets, large phones)
+  'small-2x': 600px,
+  // tablets landscape
   'medium': 768px,
-  'medium-2x': 991px,
+  // laptop desktop
+  'medium-2x': 992px,
+  // large desktop laptop
   'large': 1024px,
 ) !default;
 
