@@ -23,6 +23,8 @@ module.exports = {
         varsIgnorePattern: 'React',
       },
     ],
+    'space-before-function-paren': 'off',
+    '@typescript-eslint/space-before-function-paren': 'off',
   },
   settings: {
     react: {
