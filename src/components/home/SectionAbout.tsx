@@ -1,5 +1,6 @@
-import chapters, { Chapter } from './data/chapters';
+import chapters, { IChapter } from './data/chapters';
 import SectionTitle from './SectionTitle';
+import LazyLoad from 'react-lazyload';
 
 const SectionAbout = () => {
   return (
@@ -9,8 +10,8 @@ const SectionAbout = () => {
 
       <div className="container">
         
-        {chapters.map((chapter: Chapter) => {
-          return <div key={chapter.id} className="box"><div className={`item ${chapter.id % 2 === 0 ? 'incrwi': ''}`} style={{
+        {chapters.map((chapter: IChapter) => {
+          return <LazyLoad key={chapter.id} height={`${chapter.height}rem`} offset={[-100, 0]}> <div className="box"><div className={`item ${chapter.id % 2 === 0 ? 'incrwi': ''}`} style={{
             backgroundImage: `url(${chapter.imageUrl})`,
             height: `${chapter.height}rem`,
             minHeight: chapter.height,
@@ -29,6 +30,7 @@ const SectionAbout = () => {
             </div>
           </div>
           </div>
+          </LazyLoad>
         })}
 
       </div>

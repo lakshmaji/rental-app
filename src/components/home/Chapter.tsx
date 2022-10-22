@@ -1,8 +1,8 @@
-import { Chapter as ChapterType } from './data/chapters';
+import { IChapter } from './data/chapters';
 import { FC } from 'react';
 
 interface Props {
-  chapter: ChapterType;
+  chapter: IChapter;
 }
 
 const Chapter: FC<Props> = ({ chapter }) => {

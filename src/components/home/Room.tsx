@@ -1,8 +1,9 @@
 import { FC } from 'react';
-import { Room as RoomType } from './data/rooms';
+import { IRoom } from './data/rooms';
+import LazyLoad from 'react-lazyload';
 
 interface Props {
-  room: RoomType;
+  room: IRoom;
   onClick?: (_: number) => void;
 }
 
@@ -15,11 +16,14 @@ const Room: FC<Props> = ({ room, onClick }) => {
 
   return (
     <div className="room-container">
+                <LazyLoad throttle={200} height={'300rem'}>
+
       <img className="image" src={room.image} alt={room.name} style={{
         width: '100%',
         height:'100%',
         objectFit: "cover"
       }} height={'300rem'} width="500rem" />
+      </LazyLoad>
 
       <div className="description">
         <div className="wrapper">

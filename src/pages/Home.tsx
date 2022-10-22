@@ -1,10 +1,11 @@
-import React, { FC } from 'react'
+import React, { FC, lazy, Suspense } from 'react'
 import QuickSearch from '../components/home/QuickSearch'
 import Navbar from '../components/navbar/Navbar'
 import mainvectorsvg from "../assets/header/Vector.svg";
-import Explore from '../components/home/Explore';
 import Footer from '../components/footer/Footer';
-import SectionAbout from '../components/home/SectionAbout';
+
+const Explore = lazy(() => import('../components/home/Explore'));
+const SectionAbout = lazy(() => import('../components/home/SectionAbout'));
 
 interface Props {
 
@@ -32,8 +33,12 @@ const Home: FC<Props> = () => {
 
 
         </header>
-        <Explore />
-        <SectionAbout />
+        <Suspense fallback={<div>loading...</div>}>
+          <Explore />
+        </Suspense>
+        <Suspense fallback={<div>loading...</div>}>
+          <SectionAbout />
+        </Suspense>
         {/* TODO: move to layout */}
         <Footer />
 

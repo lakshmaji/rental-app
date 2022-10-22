@@ -1,9 +1,9 @@
-import image1 from "../../../assets/explore/pexels-dmitry-zvolskiy-2082087 1.png";
-import image2 from "../../../assets/explore/pexels-naim-benjelloun-2029670 1.png";
+import image1 from "../../../assets/explore/pexels-dmitry-zvolskiy-2082087 1.webp";
+import image2 from "../../../assets/explore/pexels-naim-benjelloun-2029670 1.webp";
 // import image1 from "../../../assets/explore/one.svg";
 // import image2 from "../../../assets/explore/two.svg";
 
-export interface Room {
+export interface IRoom {
     id: number;
     name: string;
     price: number;
@@ -11,7 +11,7 @@ export interface Room {
     image: string;
   }
   
-  const rooms: Room[] = [
+  const rooms: IRoom[] = [
     {
       id: 1,
       name: 'Room with one king-size bed',
