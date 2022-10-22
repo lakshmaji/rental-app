@@ -9,7 +9,7 @@ const QuickSearch = () => {
   });
 
   return (
-    <div className="formwrapper">
+    <div className="form-wrapper">
       <div className="form">
         <Input subtext="CITY" value={input} setter={setInput} />
         <Input subtext="DATES" value={input} setter={setInput} />

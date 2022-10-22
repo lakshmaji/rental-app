@@ -1,12 +1,9 @@
-.formwrapper {
+.form-wrapper {
     position: absolute;
-    // left: 0;
     bottom: 7.3rem;
     width: 100vw;
-    // height: max-content;
     display: flex;
     justify-content: center;
-    // align-items: center;
     z-index: 1;
 
 
@@ -15,31 +12,23 @@
       box-shadow: 16px 28px 15px rgb(0 0 0 / 74%);
 
       padding: .15rem;
-      // width: max-content;
-      // height: max-content;
       display: flex;
       flex-direction: row;
-      // justify-content: space-around;
       border-radius: 2rem;
       background: linear-gradient(94.43deg, rgba(249, 249, 249, 0.49) 34.95%, rgba(249, 249, 249, 0.175) 67.01%);
       backdrop-filter: blur(5px);
-      // justify-content: center;
       align-items: center;
-      // flex-wrap: wrap;
 
       button {
         width: 23.5rem;
         height: 7.0rem;
         background: linear-gradient(90deg, #FF594C 0%, #FAC527 100%);
         border-radius: 1.6rem;
-        // padding-left: 0.75rem;
-        // padding-left: 0.75rem;
         padding:  1.6rem 5.2rem;
         margin: 1rem;
         display: flex;
         justify-content:space-around;
         align-items: center;
-        // gap: 0.8rem;
         font-size: 2.6rem;
         line-height: 11.0rem;
         color: #ffffff;
@@ -57,7 +46,7 @@
   }
 
 @include breakpoint(small-2x) {
-  .formwrapper {
+  .form-wrapper {
     bottom: 14rem;
     
     .form {

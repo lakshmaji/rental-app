@@ -3,22 +3,22 @@ import LazyLoad from 'react-lazyload';
 import { IProduct } from '../../models/product';
 
 interface Props {
-  room: IProduct;
+  product: IProduct;
   onClick?: (_: number) => void;
 }
 
-const Room: FC<Props> = ({ room, onClick }) => {
+const Product: FC<Props> = ({ product, onClick }) => {
   const handleClick = () => {
     if (onClick) {
-      onClick(room.id);
+      onClick(product.id);
     }
   };
 
   return (
-    <div className="room-container">
+    <div className="product-container">
                 <LazyLoad throttle={200} height={'300rem'}>
 
-      <img className="image" src={room.image} alt={room.name} style={{
+      <img className="image" src={product.image} alt={product.name} style={{
         width: '100%',
         height:'100%',
         objectFit: "cover"
@@ -28,10 +28,10 @@ const Room: FC<Props> = ({ room, onClick }) => {
       <div className="description">
         <div className="wrapper">
         <div className='one'>
-          <h4 className="name">{room.name}</h4>
+          <h4 className="name">{product.name}</h4>
           <div className='three'>
-            <div className="price">{room.price}$</div>
-            <div className="size">{room.area}м²</div>
+            <div className="price">{product.price}$</div>
+            <div className="size">{product.area}м²</div>
           </div>
         </div>
         <div className='two'>
@@ -45,4 +45,4 @@ const Room: FC<Props> = ({ room, onClick }) => {
   );
 };
 
-export default Room;
+export default Product;

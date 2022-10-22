@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import rooms from "../../data/rooms";
+import products from "../../data/products";
 import Room from "./Room";
 import SectionTitle from "./SectionTitle";
 
@@ -8,9 +8,9 @@ const ExploreSection = () => {
     <section className="explore-container">
       <SectionTitle title="Explore" subtitle="From one-guest rooms to penthouses with pools and gardens" />
       <div className="row">
-        {rooms.map((room) => (
-          <Fragment key={room.id}>
-            <Room room={room} />
+        {products.map((product) => (
+          <Fragment key={product.id}>
+            <Room product={product} />
           </Fragment>
         ))}
       </div>

@@ -3,7 +3,7 @@ import image2 from "../assets/explore/pexels-naim-benjelloun-2029670 1.webp";
 import { IProduct } from "../models/product";
 
 
-  const rooms: IProduct[] = [
+  const products: IProduct[] = [
     {
       id: 1,
       name: 'Room with one king-size bed',
@@ -21,5 +21,5 @@ import { IProduct } from "../models/product";
     },
   ];
   
-  export default rooms;
+  export default products;
   

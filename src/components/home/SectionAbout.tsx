@@ -16,15 +16,10 @@ const SectionAbout = () => {
             backgroundImage: `url(${chapter.imageUrl})`,
             height: `${chapter.height}rem`,
             minHeight: chapter.height,
-            // backgroundSize: ''
             backgroundPosition: 'center',
             backgroundSize: 'cover',
-            backgroundRepeat: 'no-repeat',
-            // width: '100vw',
-            // height: '100vh'
-    
+            backgroundRepeat: 'no-repeat',    
           }}>
-            {/* <img src="about-us/one.png" alt="" /> */}
             <div className='info'>
               <h2>{chapter.title}</h2>
               <p>{chapter.description}</p>
