@@ -1,11 +1,16 @@
 # Rental app
 
+Demo: View live site [here](https://rental-discovery.surge.sh/)
+
+[![Lint, Build and Deploy](https://github.com/lakshmaji/ui-code/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/lakshmaji/ui-code/actions/workflows/deploy.yml)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 This is illustrates creating a single page in React.js application using [the figma](https://www.figma.com/file/oKN9NbDMHh99WaQXyvAPN9/Rental-website?node-id=0%3A1) wireframe.
 
 ## Lighthouse score
 
+![lighthouse prod score #0](./.github/assets/lighthouse-prod.png)
 ![lighthouse score 100 #1](./.github/assets/lighthouse1.png)
 ![lighthouse score 100 #2](./.github/assets/lighthouse2.png)
 
