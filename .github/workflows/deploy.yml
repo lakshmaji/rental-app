@@ -43,4 +43,4 @@ jobs:
         with:
           node-version: 8
       - run: npm install -g surge
-      - run: surge ./build --token ${{ secrets.SURGE_TOKEN }}
+      - run: surge ./build https://rental-discovery.surge.sh --token ${{ secrets.SURGE_TOKEN }}
