@@ -25,7 +25,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "e2e": "$(npm bin)/cypress open",
-    "lint": "eslint . --ext .ts",
+    "lint": "eslint .",
     "prepare": "husky install"
   },
   "browserslist": {
