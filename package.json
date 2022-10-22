@@ -16,7 +16,7 @@
     "react-dom": "^18.2.0",
     "react-lazyload": "^3.2.0",
     "react-scripts": "5.0.1",
-    "typescript": "^4.4.2",
+    "typescript": "*",
     "web-vitals": "^2.1.0"
   },
   "scripts": {
@@ -24,13 +24,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "e2e": "$(npm bin)/cypress open"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "e2e": "$(npm bin)/cypress open",
+    "lint": "eslint . --ext .ts"
   },
   "browserslist": {
     "production": [
@@ -46,7 +41,14 @@
   },
   "devDependencies": {
     "@types/react-anchor-link-smooth-scroll": "^1.0.2",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
     "cypress": "^10.11.0",
+    "eslint": "^8.0.1",
+    "eslint-config-standard-with-typescript": "^23.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.31.10",
     "sass": "^1.55.0"
   }
 }

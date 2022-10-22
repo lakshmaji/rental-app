@@ -1,0 +1,7 @@
+public
+cypress
+.vscode
+.github
+node_modules
+build
+*.svg
