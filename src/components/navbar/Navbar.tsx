@@ -1,15 +1,15 @@
-import React from 'react';
-import { useScrollDirection } from '../../hooks/useScrollDirection';
-import { useScrollPosition } from '../../hooks/useScrollPosition';
-import logo from '../../assets/logo.svg';
+import React from 'react'
+import { useScrollDirection } from '../../hooks/useScrollDirection'
+import { useScrollPosition } from '../../hooks/useScrollPosition'
+import logo from '../../assets/logo.svg'
 
 const Navbar = (): JSX.Element => {
   function classNames(...classes: any): string {
-    return classes.filter(Boolean).join(' ');
+    return classes.filter(Boolean).join(' ')
   }
 
-  const scrollPosition = useScrollPosition();
-  const scrollDirection = useScrollDirection();
+  const scrollPosition = useScrollPosition()
+  const scrollDirection = useScrollDirection()
 
   // TODO: rename
   return (
@@ -42,7 +42,7 @@ const Navbar = (): JSX.Element => {
         </li>
       </ul>
     </nav>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar
