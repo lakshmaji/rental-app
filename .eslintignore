@@ -6,3 +6,5 @@ node_modules
 build
 *.svg
 cypress.config.ts
+src/*.d.ts
+src/reportWebVitals.ts
