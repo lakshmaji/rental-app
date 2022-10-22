@@ -26,6 +26,7 @@ This is illustrates creating a single page in React.js application using [the fi
 
 1. Currently there are no unit tests are written (due to time limitation, once I get time, will add them)
 2. Chosen a single SASS styles bundle instead of scopes styles for individual components as the final bundle size is very less and can be cached apart from js bundles.
+3. PR workflows can be added
 
 ---
 

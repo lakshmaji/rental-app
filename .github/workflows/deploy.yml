@@ -22,12 +22,22 @@ jobs:
         run: yarn lint
       - name: Build
         run: yarn build
+      - name: Upload artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: rental-app
+          path: build
+
   build:
     needs: [checks]
     runs-on: ubuntu-latest
     name: Deploying to surge
     steps:
-      - uses: actions/checkout@v3
+      - name: Download artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: rental-app
+          path: build
       - name: Install surge
         uses: actions/setup-node@v3
         with:
