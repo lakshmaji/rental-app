@@ -13,20 +13,31 @@ This is illustrates creating a single page in React.js application using [the fi
 
 ![FCP, LCP](./.github/assets/metrics.png)
 
+---
+
 ## Tools or Libraries used
 
 1. React.js
 2. SASS for managing styles
 3. Cypress for e2e tests
+4. eslint (prettier) for styling and formatting respectively.
 
 ### Todo
 
 1. Currently there are no unit tests are written (due to time limitation, once I get time, will add them)
 2. Chosen a single SASS styles bundle instead of scopes styles for individual components as the final bundle size is very less and can be cached apart from js bundles.
 
-## Development
+---
+
+## Installation
 
 In the project directory, you can run:
+
+```bash
+yarn install
+```
+
+## Development
 
 ### `yarn start`
 
@@ -48,3 +59,10 @@ The build is minified and the filenames include the hashes.
 ## Deployment
 
 The app is deployed on [surge](https://surge.sh/)
+
+## Third part tools for development
+
+1. For cross platform web app verification
+   1. https://solisapp.com/
+   2. https://sizzy.co/
+   3. https://www.browserstack.com/
