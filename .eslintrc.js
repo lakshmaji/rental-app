@@ -17,6 +17,12 @@ module.exports = {
     'comma-dangle': 'off',
     '@typescript-eslint/comma-dangle': 'off',
     '@typescript-eslint/semi': 'off',
+    'no-unused-vars': [
+      'error',
+      {
+        varsIgnorePattern: 'React',
+      },
+    ],
   },
   settings: {
     react: {

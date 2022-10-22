@@ -1,5 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { useScrollPosition } from './useScrollPosition';
+import { useEffect, useRef, useState } from 'react';
 
 const THRESHOLD = 0;
 
@@ -26,7 +25,7 @@ export const useScrollDirection = (): string => {
       blocking.current = false;
     };
 
-    const onScroll = () => {
+    const onScroll = (): void => {
       if (!blocking.current) {
         blocking.current = true;
         window.requestAnimationFrame(updateScrollDirection);

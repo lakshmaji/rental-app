@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { useScrollDirection } from '../../hooks/useScrollDirection';
 import { useScrollPosition } from '../../hooks/useScrollPosition';
 import logo from '../../assets/logo.svg';
