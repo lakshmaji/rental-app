@@ -1,10 +1,9 @@
-$text-font-stack: "Poppins", sans-serif !default;
-
+$fa-font-path: './webfonts';
+$text-font-stack: 'Poppins', sans-serif !default;
 
 $light-grey: rgb(237, 237, 237) !default;
 $mid-grey: rgb(153, 153, 153) !default;
 $dark-grey: rgb(68, 68, 68) !default;
-
 
 $text-color: rgb(34, 34, 34) !default;
 $text-white: #fff !default;
@@ -13,16 +12,11 @@ $brand-color: rgb(229, 0, 80) !default;
 
 $primary-bg: #e74c3c;
 
-
-
 $box-shadow-default: 0 20px 30px rgba(0, 0, 0, 0.15);
-
 
 /// Container's maximum width
 /// @type Length
 $max-width: 1180px !default;
-
-
 
 $breakpoints: (
   // extra small devises (phones)
@@ -34,8 +28,5 @@ $breakpoints: (
   // laptop desktop
   'medium-2x': 992px,
   // large desktop laptop
-  'large': 1024px,
+  'large': 1024px
 ) !default;
-
-
-
