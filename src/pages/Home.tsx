@@ -1,11 +1,13 @@
-import React, { FC, lazy, Suspense } from 'react';
-import QuickSearch from '../components/home/QuickSearch';
-import Navbar from '../components/navbar/Navbar';
-import mainvectorsvg from '../assets/header/Vector.svg';
-import Footer from '../components/footer/Footer';
+import React, { FC, lazy, Suspense } from 'react'
+import QuickSearch from '../components/home/QuickSearch'
+import Navbar from '../components/navbar/Navbar'
+import mainvectorsvg from '../assets/header/Vector.svg'
+import Footer from '../components/footer/Footer'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 
-const Explore = lazy(async () => await import('../components/home/Explore'));
-const SectionAbout = lazy(async () => await import('../components/home/SectionAbout'));
+const Explore = lazy(async () => await import('../components/home/Explore'))
+const SectionAbout = lazy(async () => await import('../components/home/SectionAbout'))
 
 const Home: FC = (): JSX.Element => {
   return (
@@ -22,6 +24,7 @@ const Home: FC = (): JSX.Element => {
           <QuickSearch />
           <div className="scroll-down-indicator">
             <i className="fa-solid fa-chevron-down"></i>
+            <FontAwesomeIcon icon={faChevronDown} />
           </div>
         </div>
         <img src={mainvectorsvg} className="mask" alt="mask" />
@@ -35,7 +38,7 @@ const Home: FC = (): JSX.Element => {
       {/* TODO: move to layout */}
       <Footer />
     </>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

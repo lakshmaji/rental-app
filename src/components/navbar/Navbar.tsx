@@ -2,6 +2,8 @@ import React from 'react'
 import { useScrollDirection } from '../../hooks/useScrollDirection'
 import { useScrollPosition } from '../../hooks/useScrollPosition'
 import logo from '../../assets/logo.svg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 const Navbar = (): JSX.Element => {
   function classNames(...classes: any): string {
@@ -25,7 +27,7 @@ const Navbar = (): JSX.Element => {
       </a>
       <input type="checkbox" id="menuBtn" name="" />
       <label htmlFor="menuBtn" className="barIcon">
-        <i className="fa-solid fa-bars"></i>
+        <FontAwesomeIcon icon={faBars} />
       </label>
       <ul>
         <li>
