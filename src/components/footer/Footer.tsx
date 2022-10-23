@@ -1,9 +1,7 @@
-import React, { FC } from 'react';
-// TODO: remove this library
-import AnchorLink from 'react-anchor-link-smooth-scroll';
-import Logo from '../logo/Logo';
+import React, { FC } from 'react'
+import Logo from '../logo/Logo'
 
-const year = new Date().getFullYear();
+const year = new Date().getFullYear()
 
 const Footer: FC = (): JSX.Element => {
   return (
@@ -14,14 +12,10 @@ const Footer: FC = (): JSX.Element => {
       </div>
       <ul>
         <li>
-          <AnchorLink offset="100" href="#explore">
-            Explore
-          </AnchorLink>
+          <a href="#explore">Explore</a>
         </li>
         <li>
-          <AnchorLink offset="100" href="#about">
-            About Us
-          </AnchorLink>
+          <a href="#about-us">About Us</a>
         </li>
         <li>
           <a href="#null">Cities</a>
@@ -31,7 +25,7 @@ const Footer: FC = (): JSX.Element => {
         </li>
       </ul>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
