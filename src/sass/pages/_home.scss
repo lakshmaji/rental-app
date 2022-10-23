@@ -1,12 +1,12 @@
 header {
   height: 100vh;
-  background: url("../../assets/header/pexels-vecislavas-popa-1571460 1.webp");
+  background: url('../../assets/header/header-bg.webp');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
 
   &:before {
-    content: "";
+    content: '';
     left: 0;
     top: 0;
     width: 100%;
@@ -35,7 +35,7 @@ header {
     flex-direction: column;
 
     .title {
-      font-family: "Exo 2";
+      font-family: 'Exo 2';
       font-style: normal;
       font-weight: 700;
       font-size: 10rem;
