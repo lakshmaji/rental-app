@@ -1,7 +1,6 @@
 import React from 'react'
 import { useScrollDirection } from '../../hooks/useScrollDirection'
 import { useScrollPosition } from '../../hooks/useScrollPosition'
-import logo from '../../assets/logo.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 
@@ -23,7 +22,7 @@ const Navbar = (): JSX.Element => {
       )}
     >
       <a href="/" className="logo">
-        <img src={logo} width={'186rem'} height={'53rem'} alt="logo" />
+        <img src="logo.webp" width={'186rem'} height={'53rem'} alt="logo" />
       </a>
       <input type="checkbox" id="menuBtn" name="" />
       <label htmlFor="menuBtn" className="barIcon">
