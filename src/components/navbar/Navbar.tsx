@@ -3,6 +3,7 @@ import { useScrollDirection } from '../../hooks/useScrollDirection'
 import { useScrollPosition } from '../../hooks/useScrollPosition'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
+import Logo from '../logo/Logo'
 
 const Navbar = (): JSX.Element => {
   function classNames(...classes: any): string {
@@ -21,9 +22,7 @@ const Navbar = (): JSX.Element => {
         scrollDirection === 'up' ? 'show' : '',
       )}
     >
-      <a href="/" className="logo">
-        <img src="logo.webp" width={'186rem'} height={'53rem'} alt="logo" />
-      </a>
+      <Logo />
       <input type="checkbox" id="menuBtn" name="" />
       <label htmlFor="menuBtn" className="barIcon">
         <FontAwesomeIcon icon={faBars} />

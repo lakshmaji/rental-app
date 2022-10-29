@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 import products from '../../data/products'
-import Room from './Room'
+import Product from './Product'
 import SectionTitle from './SectionTitle'
 
 const ExploreSection = (): JSX.Element => {
@@ -13,7 +13,7 @@ const ExploreSection = (): JSX.Element => {
       <div className="row">
         {products.map((product) => (
           <Fragment key={product.id}>
-            <Room product={product} />
+            <Product product={product} />
           </Fragment>
         ))}
       </div>

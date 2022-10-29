@@ -1,14 +1,18 @@
 import React, { FC } from 'react'
 import Logo from '../logo/Logo'
+import styles from './Footer.module.scss'
 
 const year = new Date().getFullYear()
 
 const Footer: FC = (): JSX.Element => {
   return (
-    <footer className="footer-container">
-      <div className="copyright">
-        <Logo />
-        <span className="copyright-text"> &copy; {year} Company Name All rights reserved</span>
+    <footer className={styles['footer-container']}>
+      <div className={styles.copyright}>
+        <Logo dark />
+        <span className={styles['copyright-text']}>
+          {' '}
+          &copy; {year} Company Name All rights reserved
+        </span>
       </div>
       <ul>
         <li>

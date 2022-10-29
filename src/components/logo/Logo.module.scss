@@ -1,0 +1,23 @@
+@import './../../sass/abstracts/variables';
+@import './../../sass/abstracts/mixins';
+
+.logo {
+  font-size: 5rem;
+  color: $text-white;
+  font-weight: 700;
+  position: relative;
+  z-index: 9;
+
+  &.dark {
+    img {
+      filter: invert(1);
+    }
+  }
+}
+
+@include breakpoint(small-2x) {
+  .logo {
+    font-size: 10rem;
+    line-height: 13.5rem;
+  }
+}

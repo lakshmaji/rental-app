@@ -1,10 +1,14 @@
 import React, { FC } from 'react'
+import styles from './Logo.module.scss'
 
-const Logo: FC = () => {
+interface Props {
+  dark?: boolean
+}
+const Logo: FC<Props> = ({ dark = false }) => {
   return (
-    <h1 className="app-logo">
+    <a href="/" className={[styles.logo, dark && styles.dark].join(' ')}>
       <img src="logo.webp" width={'186rem'} height={'53rem'} alt="logo" />
-    </h1>
+    </a>
   )
 }
 

@@ -1,3 +1,6 @@
+@import './../../sass/abstracts/variables';
+@import './../../sass/abstracts/mixins';
+
 .footer-container {
   padding: 3.7rem 9.3rem;
   margin: 0 auto;
@@ -12,12 +15,11 @@
     align-items: flex-start;
 
     .copyright-text {
-      margin:  1.7rem 0rem;
+      margin: 1.7rem 0rem;
       max-width: 15.9rem;
       font-size: 1.4rem;
       font-weight: 300;
       line-height: 1.8rem;
-
     }
   }
 
@@ -42,12 +44,11 @@
         padding: 1.4rem 3rem;
         transition: all 0.3s ease-in-out;
 
-        
         &:hover {
           color: #ff594c;
         }
       }
-      &:last-child  {
+      &:last-child {
         a {
           border: 2px solid #000000;
           border-radius: 1rem;
@@ -64,10 +65,10 @@
 @include breakpoint(small-2x) {
   .footer-container {
     flex-direction: column;
-    
+
     .copyright {
       align-items: center;
-      .copyright-text{
+      .copyright-text {
         max-width: 100%;
         font-size: 2.8rem;
         line-height: 3.8rem;
@@ -86,5 +87,5 @@
         }
       }
     }
-  }  
+  }
 }
