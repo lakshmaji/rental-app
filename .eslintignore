@@ -8,3 +8,4 @@ build
 cypress.config.ts
 src/*.d.ts
 src/reportWebVitals.ts
+.eslintrc.js
