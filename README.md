@@ -32,6 +32,7 @@ This is illustrates creating a single page in React.js application using [the fi
 1. Currently there are no unit tests are written (due to time limitation, once I get time, will add them)
 2. PR workflows can be added
 3. There is scope to improve performance
+4. Use HTTP/2 protocol
 
 ---
 
