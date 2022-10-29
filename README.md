@@ -10,6 +10,8 @@ This is illustrates creating a single page in React.js application using [the fi
 
 ## Lighthouse score
 
+The recent scores (performance (FCP) only @ 98) are went down due to external server default configuration. With our own configuration, (Keep alive headers for `webp` image, `woff` font format).
+
 ![lighthouse prod score #0](./.github/assets/lighthouse-prod.png)
 ![lighthouse score 100 #1](./.github/assets/lighthouse1.png)
 ![lighthouse score 100 #2](./.github/assets/lighthouse2.png)

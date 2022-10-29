@@ -9,6 +9,7 @@
     /* Super Modern Browsers */ url('./fonts/exo-2-v20-latin-regular.woff') format('woff'),
     /* Modern Browsers */ url('./fonts/exo-2-v20-latin-regular.ttf') format('truetype'),
     /* Safari, Android, iOS */ url('./fonts/exo-2-v20-latin-regular.svg#Exo2') format('svg'); /* Legacy iOS */
+  font-display: swap;
 }
 
 /* exo-2-500 - latin */
@@ -22,6 +23,7 @@
     /* Super Modern Browsers */ url('./fonts/exo-2-v20-latin-500.woff') format('woff'),
     /* Modern Browsers */ url('./fonts/exo-2-v20-latin-500.ttf') format('truetype'),
     /* Safari, Android, iOS */ url('./fonts/exo-2-v20-latin-500.svg#Exo2') format('svg'); /* Legacy iOS */
+  font-display: swap;
 }
 
 body {
