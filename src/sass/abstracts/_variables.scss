@@ -1,21 +1,15 @@
 $text-font-stack: 'Poppins', sans-serif !default;
 
-$light-grey: rgb(237, 237, 237) !default;
-$mid-grey: rgb(153, 153, 153) !default;
-$dark-grey: rgb(68, 68, 68) !default;
+$transparent-grey: #b2b2b280 !default;
 
 $text-color: rgb(34, 34, 34) !default;
 $text-white: #fff !default;
+$placeholder-grey: #6d6d6d !default;
 
-$brand-color: rgb(229, 0, 80) !default;
-
-$primary-bg: #e74c3c;
+$primary-bg: #ff594c;
+$light-bg: #fff;
 
 $box-shadow-default: 0 20px 30px rgba(0, 0, 0, 0.15);
-
-/// Container's maximum width
-/// @type Length
-$max-width: 1180px !default;
 
 $breakpoints: (
   // extra small devises (phones)

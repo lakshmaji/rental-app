@@ -1,0 +1,79 @@
+@import './../../../sass/abstracts/variables';
+@import './../../../sass/abstracts/mixins';
+
+.container {
+  position: absolute;
+  bottom: 7.3rem;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+
+  .wrapper {
+    box-shadow: 16px 28px 15px rgb(0 0 0 / 74%);
+
+    padding: 0.15rem;
+    display: flex;
+    flex-direction: row;
+    border-radius: 2rem;
+    background: linear-gradient(
+      94.43deg,
+      rgba(249, 249, 249, 0.49) 34.95%,
+      rgba(249, 249, 249, 0.175) 67.01%
+    );
+    backdrop-filter: blur(5px);
+    align-items: center;
+
+    button {
+      width: 23.5rem;
+      height: 7rem;
+      background: linear-gradient(90deg, #ff594c 0%, #fac527 100%);
+      border-radius: 1.6rem;
+      padding: 1.6rem 5.2rem;
+      margin: 1rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      font-size: 2.6rem;
+      line-height: 11rem;
+      color: $text-white;
+      outline: none;
+      border: none;
+      font-weight: 500;
+
+      i.fa-search {
+        font-size: 2.6rem;
+        color: $text-white;
+      }
+    }
+  }
+}
+
+@include breakpoint(small-2x) {
+  .container {
+    bottom: 14rem;
+
+    .wrapper {
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+      width: 90%;
+      padding: 3rem 4rem;
+      flex-direction: column;
+      border-radius: 2.6rem;
+
+      button {
+        border-radius: 2.6rem;
+        width: 100%;
+        height: 16.4rem;
+        display: flex;
+        justify-content: center;
+        font-size: 5.7rem;
+
+        i.fa-search {
+          font-size: 5.6rem;
+          padding-right: 2rem;
+        }
+      }
+    }
+  }
+}

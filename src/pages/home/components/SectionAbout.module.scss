@@ -1,0 +1,25 @@
+@import './../../../sass/abstracts/variables';
+@import './../../../sass/abstracts/mixins';
+
+.container {
+  padding: 3.7rem 9.3rem;
+  margin: 0 auto;
+
+  .grid {
+    width: 80vw;
+    columns: 2;
+  }
+}
+
+@include breakpoint(small-2x) {
+  .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 8.7rem 9.3rem;
+
+    .grid {
+      columns: 1;
+    }
+  }
+}

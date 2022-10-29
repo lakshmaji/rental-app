@@ -1,4 +1,5 @@
 import React, { FC } from 'react'
+import styles from './SectionTitle.module.scss'
 
 interface Props {
   title: string
@@ -7,9 +8,9 @@ interface Props {
 
 const SectionTitle: FC<Props> = ({ title, subtitle }) => {
   return (
-    <div className="title-container">
-      <h2 className="title">{title}</h2>
-      <h3 className="subtitle">{subtitle}</h3>
+    <div className={styles['title-container']}>
+      <h2 className={styles.title}>{title}</h2>
+      <h3 className={styles.subtitle}>{subtitle}</h3>
     </div>
   )
 }

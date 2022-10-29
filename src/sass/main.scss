@@ -4,13 +4,6 @@
 
 @import 'base/base', 'base/fonts', 'base/normalize', 'base/typography';
 
-@import 'layout/navigation';
-
-@import 'components/quick_search', 'components/title', 'components/about_us', 'components/product',
-  'components/explore', 'components/chapter', 'components/inputs';
-
-@import 'pages/home';
-
 :root {
   font-size: calc(100vw / 115);
 }

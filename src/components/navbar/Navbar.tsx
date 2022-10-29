@@ -4,27 +4,25 @@ import { useScrollPosition } from '../../hooks/useScrollPosition'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import Logo from '../logo/Logo'
+import { classNames } from '../../utils'
+import styles from './Navbar.module.scss'
 
 const Navbar = (): JSX.Element => {
-  function classNames(...classes: any): string {
-    return classes.filter(Boolean).join(' ')
-  }
-
   const scrollPosition = useScrollPosition()
   const scrollDirection = useScrollDirection()
 
-  // TODO: rename
   return (
     <nav
       className={classNames(
-        scrollPosition > 0 ? 'navbg' : '',
-        scrollDirection === 'down' ? 'hide' : '',
-        scrollDirection === 'up' ? 'show' : '',
+        styles.nav,
+        scrollPosition > 0 ? styles.navbg : '',
+        scrollDirection === 'down' ? styles.hide : '',
+        scrollDirection === 'up' ? styles.show : '',
       )}
     >
       <Logo />
-      <input type="checkbox" id="menuBtn" name="" />
-      <label htmlFor="menuBtn" className="barIcon">
+      <input type="checkbox" id="menuBtn" name="" className={styles.menuBtn} />
+      <label htmlFor="menuBtn" className={styles.barIcon}>
         <FontAwesomeIcon icon={faBars} />
       </label>
       <ul>

@@ -25,6 +25,7 @@ module.exports = {
     ],
     'space-before-function-paren': 'off',
     '@typescript-eslint/space-before-function-paren': 'off',
+    '@typescript-eslint/no-misused-promises': ['error', { checksVoidReturn: false }],
   },
   settings: {
     react: {
