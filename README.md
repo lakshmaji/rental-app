@@ -10,7 +10,7 @@ This is illustrates creating a single page in React.js application using [the fi
 
 ## Lighthouse score
 
-The recent scores (performance (FCP) only @ 98) are went down due to external server default configuration. With our own configuration, (Keep alive headers for `webp` image, `woff` font format).
+The SEO score is 91. The reason is this is created as an SPA version, so as you guessed the default `robot.txt` wont allow indexing. (I am not ready to modify robots.txt or SEO functionality yet)
 
 ![lighthouse prod score #0](./.github/assets/lighthouse-prod.png)
 ![lighthouse score 100 #1](./.github/assets/lighthouse1.png)
