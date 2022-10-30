@@ -4,6 +4,10 @@ Demo: View live site [here](https://rental-discovery.surge.sh/)
 
 [![Lint, Build and Deploy](https://github.com/lakshmaji/ui-code/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/lakshmaji/ui-code/actions/workflows/deploy.yml)
 
+[![E2E tests](https://github.com/lakshmaji/ui-code/actions/workflows/e2e.yml/badge.svg?branch=main)](https://github.com/lakshmaji/ui-code/actions/workflows/e2e.yml)
+
+![ESLint](https://badges.aleen42.com/src/eslint.svg)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 This is illustrates creating a single page in React.js application using [the figma](https://www.figma.com/file/oKN9NbDMHh99WaQXyvAPN9/Rental-website?node-id=0%3A1) wireframe.
@@ -31,10 +35,11 @@ The SEO score is 91. The reason is this is created as an SPA version, so as you 
 
 ### Todo
 
-1. Currently there are no unit tests are written (due to time limitation, once I get time, will add them)
-2. PR workflows can be added
-3. There is scope to improve performance
-4. Use HTTP/2 protocol
+1. Add date selection, typeahead search component
+2. Currently there are no unit tests are written (due to time limitation, once I get time, will add them)
+3. PR workflows can be added
+4. There is scope to improve performance
+5. Use HTTP/2 protocol
 
 ---
 
@@ -56,6 +61,9 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 ### `yarn e2e`
 
 Launches the test runner (cypress) in the interactive mode.
+
+Cypress (E2E) - CI results
+![E2E workflow stats](./.github/assets/e2e.png)
 
 ### `yarn build`
 
