@@ -11,7 +11,7 @@ const SectionExplore = (): JSX.Element => {
         title="Explore"
         subtitle="From one-guest rooms to penthouses with pools and gardens"
       />
-      <div className={styles.grid}>
+      <div className={styles.grid} id="products">
         {products.map((product) => (
           <Product key={product.id} product={product} />
         ))}

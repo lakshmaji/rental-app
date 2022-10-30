@@ -11,7 +11,7 @@ const Product: FC<Props> = ({ product }): JSX.Element => {
   const handleBook = (): void => {}
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="product">
       <LazyLoad throttle={200} height={'300rem'}>
         <img
           className={styles.image}

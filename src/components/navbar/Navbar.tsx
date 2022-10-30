@@ -22,7 +22,7 @@ const Navbar = (): JSX.Element => {
     >
       <Logo />
       <input type="checkbox" id="menuBtn" name="" className={styles.menuBtn} />
-      <label htmlFor="menuBtn" className={styles.barIcon}>
+      <label htmlFor="menuBtn" className={styles.barIcon} id="barIcon">
         <FontAwesomeIcon icon={faBars} />
       </label>
       <ul>

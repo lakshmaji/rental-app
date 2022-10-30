@@ -31,7 +31,7 @@ const Search = (): JSX.Element => {
         <Input title="Dates" control={control} name="date" />
         <Input title="Guests" control={control} name="guests" />
 
-        <button onClick={onSubmit}>
+        <button onClick={onSubmit} id="searchBtn">
           <FontAwesomeIcon icon={faSearch} />
           Search
         </button>
