@@ -6,6 +6,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 import Logo from '../logo/Logo'
 import { classNames } from '../../utils'
 import styles from './Navbar.module.scss'
+import CommonLinks from '../CommonLinks'
 
 const Navbar = (): JSX.Element => {
   const scrollPosition = useScrollPosition()
@@ -26,18 +27,7 @@ const Navbar = (): JSX.Element => {
         <FontAwesomeIcon icon={faBars} />
       </label>
       <ul>
-        <li>
-          <a href="#explore">Explore</a>
-        </li>
-        <li>
-          <a href="#about-us">About Us</a>
-        </li>
-        <li>
-          <a href="#cities">Cities</a>
-        </li>
-        <li>
-          <a href="#call">Call</a>
-        </li>
+        <CommonLinks />
       </ul>
     </nav>
   )

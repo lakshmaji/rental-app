@@ -1,4 +1,5 @@
 import React, { FC } from 'react'
+import CommonLinks from '../CommonLinks'
 import Logo from '../logo/Logo'
 import styles from './Footer.module.scss'
 
@@ -15,18 +16,7 @@ const Footer: FC = (): JSX.Element => {
         </span>
       </div>
       <ul>
-        <li>
-          <a href="#explore">Explore</a>
-        </li>
-        <li>
-          <a href="#about-us">About Us</a>
-        </li>
-        <li>
-          <a href="#null">Cities</a>
-        </li>
-        <li>
-          <a href="tel:+919999999999">Call</a>
-        </li>
+        <CommonLinks />
       </ul>
     </footer>
   )
